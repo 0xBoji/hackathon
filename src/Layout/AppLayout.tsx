@@ -5,6 +5,7 @@ import { ScrollTop } from "components/Button";
 import Header from "./AppLayout/Header/Header";
 
 // @styled-component
+import { GlobalStyles } from "./SectionLayout.styled";
 import { AppLayoutWrapper } from "./AppLayout.styled";
 
 // -----------------------------------------------------------

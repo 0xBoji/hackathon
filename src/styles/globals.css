@@ -30,3 +30,7 @@ html {
 #__next {
   overflow-x: hidden;
 }
+::selection {
+  background-color: white;
+  color: rgb(89, 203, 205);
+}

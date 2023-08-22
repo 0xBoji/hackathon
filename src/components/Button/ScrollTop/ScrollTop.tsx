@@ -16,6 +16,7 @@ const ScrollButtonWrapper = styled.div<ScrollButtonProps>`
   position: fixed;
   width: 50px;
   height: 50px;
+  border-radius:8px;
   background: #7efefe;
   color: black;
   text-transform: uppercase;

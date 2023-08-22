@@ -12,6 +12,7 @@ import {
   Follower,
   Icons,
   Icon,
+  IconButton,
 } from "./SpaceItem.styled";
 
 // @type
@@ -19,10 +20,11 @@ type Props = {
   image: any;
   title: string;
   description: string;
-  trustpoint: string;
+  trustpoint: number;
   follower: string;
   connect: { icon: any; link: string }[];
 };
+
 
 //----------------------------------------------------------------
 
@@ -37,15 +39,15 @@ const Container: React.FC<{ data: Props }> = ({ data }) => {
       <TP>{data.trustpoint} TP</TP>
       <Detail>
         <Follower>{data.follower}</Follower>
-        <Icons>
+        <Icons >              
           {data.connect.map((item, index) => (
-            <Icon key={index} href={item.link}>
-              <a target="_blank">
-                <item.icon />
-              </a>
-            </Icon>
-          ))}
-        </Icons>
+                <IconButton  key={index} href={item.link} target="_blank">
+              Join Now&nbsp;
+                  <item.icon />
+                </IconButton>
+              ))}
+            </Icons>
+
       </Detail>
     </Layout>
   );

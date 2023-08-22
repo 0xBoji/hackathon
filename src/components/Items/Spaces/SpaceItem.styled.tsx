@@ -19,6 +19,13 @@ export const Layout = styled.div`
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 `;
+export const IconButton = styled.a`
+  display: inline-block;
+  color: #7efefe;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000; /* Change the color to your desired color */
+`;
 export const ImageLayout = styled.div`
   position: relative;
   border-radius: 20px;
@@ -99,7 +106,16 @@ export const Follower = styled.div`
 export const Icons = styled.div`
   margin-top: 20px;
   display: flex;
-  color: black;
+  background: #7efefe;
+  border: 2px solid black;
+  padding: 5px; 
+  margin-right: 10px; 
+  border-radius:8px;
+  :hover{
+   background:#7efefe;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 8);
+  }
+
 `;
 export const Icon = styled(Link)`
   cursor: pointer;

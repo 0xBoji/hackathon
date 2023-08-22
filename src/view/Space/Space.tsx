@@ -23,7 +23,7 @@ const Spaceinfo = [
     image: Image1,
     title: "DAO",
     description: "DAO Arbitrum",
-    trustpoint: "20,000",
+    trustpoint: 20000,
     follower: "100,000 Followers",
     connect: [{ icon: FaPlus, link: "#" }],
   },
@@ -31,7 +31,7 @@ const Spaceinfo = [
     image: Image3,
     title: "Pancake Swap",
     description: "Pancake Swap Community",
-    trustpoint: "10,000",
+    trustpoint: 10000,
     follower: "10,000 Followers",
     connect: [{ icon: FaPlus, link: "#" }],
   },
@@ -39,7 +39,7 @@ const Spaceinfo = [
     image: Image2,
     title: "Uni Swap",
     description: "Uni Swap Community",
-    trustpoint: "8,000",
+    trustpoint: 8000,
 
     follower: "70,000 Followers",
     connect: [{ icon: FaPlus, link: "#" }],
@@ -48,7 +48,7 @@ const Spaceinfo = [
     image: Image6,
     title: "Optimism",
     description: "Layer2",
-    trustpoint: "18,000",
+    trustpoint: 18000,
 
     follower: "20,000 Followers",
     connect: [{ icon: FaPlus, link: "#"}],
@@ -57,7 +57,7 @@ const Spaceinfo = [
     image: Image4,
     title: "OpenSea",
     description: "OpenSea marketplace",
-    trustpoint: "15,000",
+    trustpoint: 5000,
 
     follower: "50,000 Followers",
     connect: [{ icon: FaPlus, link: "#" }],
@@ -66,13 +66,15 @@ const Spaceinfo = [
     image: Image5,
     title: "EDU",
     description: "Learn to earn",
-    trustpoint: "20,000",
+    trustpoint: 2000,
 
     follower: "33,000 Followers",
     connect: [{ icon: FaPlus, link: "#" }],
   },
 ];
 // ----------------------------------------------------------
+
+Spaceinfo.sort((a, b) => b.trustpoint - a.trustpoint);
 
 export default function index() {
   return (

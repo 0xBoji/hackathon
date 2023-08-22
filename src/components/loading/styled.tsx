@@ -8,7 +8,7 @@ export const Layout = styled.div`
   width: 100%;
   height: 100%;
 
-  background: #969696;
+  background: #98abab;
 
   display: flex;
   flex-direction: column;
